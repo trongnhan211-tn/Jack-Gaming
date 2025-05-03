@@ -1,51 +1,17 @@
-local Fluent = //---ThĂ´ng BĂ¡o Message---//
-//--Dev Code Lua--//
-//--Nttn The Peak--//
-------------------------------------------------
-local player = game.Players.LocalPlayer
-local playerGui = player:FindFirstChild("PlayerGui") or player:WaitForChild("PlayerGui")
-local existingGui = playerGui:FindFirstChild("HIRU_Message")
-if existingGui then
-    existingGui:Destroy()
-end
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "NTTN_Message"
-ScreenGui.Parent = playerGui
-local ImageLabel = Instance.new("ImageLabel")
-ImageLabel.Parent = ScreenGui
-ImageLabel.Size = UDim2.new(0.2, 0, 0.2, 0)
-ImageLabel.Position = UDim2.new(0.4, 0, 0.15, 0)
-ImageLabel.BackgroundTransparency = 1
-ImageLabel.Image = "rbxassetid://88661933837571"
-ImageLabel.ScaleType = Enum.ScaleType.Fit
 local TextLabel = Instance.new("TextLabel")
+
+ScreenGui.Name = "nttnHubMessage"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
 TextLabel.Parent = ScreenGui
-TextLabel.Size = UDim2.new(0.8, 0, 0.3, 0)
-TextLabel.Position = UDim2.new(0.1, 0, 0.35, 0)
+TextLabel.Size = UDim2.new(1, 0, 0.1, 0)
+TextLabel.Position = UDim2.new(0, 0, 0.45, 0)
 TextLabel.BackgroundTransparency = 1
-TextLabel.Text = "XIN CHĂ€O TĂ”I LĂ€ NTTN HUB VĂ€ Cáº¢M Æ N Báº N DĂ™NG SCRIPT"
+TextLabel.Text = "XIN CHÀO TÔI LÀ NTTN TỔNG HỢP VÀ CẢM ƠN BẠN DÙNG SCRIPT"
 TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextLabel.TextSize = 40
+TextLabel.TextScaled = true
 TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.TextStrokeTransparency = 0
-TextLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextWrapped = true
-TextLabel.TextYAlignment = Enum.TextYAlignment.Center
-TextLabel.TextXAlignment = Enum.TextXAlignment.Center
-TextLabel.TextTransparency = 1
-ImageLabel.ImageTransparency = 1
-for i = 1, 10 do
-    TextLabel.TextTransparency = TextLabel.TextTransparency - 0.1
-    ImageLabel.ImageTransparency = ImageLabel.ImageTransparency - 0.1
-    wait(0.05)
-end
-wait(4)
-for i = 1, 10 do
-    TextLabel.TextTransparency = TextLabel.TextTransparency + 0.1
-    ImageLabel.ImageTransparency = ImageLabel.ImageTransparency + 0.1
-    wait(0.05)
-end
-ScreenGui:Destroy()
 local SaveManager = 
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
 
