@@ -204,5 +204,122 @@ getgenv().Configs = {
 }
 repeat task.wait() pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/kaitun.lua"))() end) until getgenv().Check_Execute
   end
+     })    AddButton(Tab1o, {
+     Name = "kaitun rise",
+    Callback = function()
+_G.Config = {
+
+    ["Melee"] = {
+
+        ["Superhuman"] = true,
+
+        ["Death Step"] = true,
+
+        ["Sharkman Karate"] = true,
+
+        ["Electric Claw"] = true,
+
+        ["Dragon Talon"] = true,
+
+        ["Godhuman"] = true
+
+    },
+
+    ["Sword"] = {
+
+        ["Saber"] = true,
+
+        ["Rengoku"] = true,
+
+        ["Canvander"] = true,
+
+        ["Buddy Sword"] = true,
+
+        ["Yama"] = true,
+
+        ["Tushita"] = true,
+
+        ["True Triple Katana"] = true,
+
+        ["Cursed Dual Katana"] = true
+
+    },
+
+    ["Gun"] = {
+
+        ["Kabucha"] = true,
+
+        ["Acidum Rifle"] = true,
+
+        ["Serpent Bow"] = true
+
+    },
+
+    ["Mastery"] = {
+
+        ["Sword"] = true
+
+    },
+
+    ["Setting"] = {
+
+        ["Enabled"] = true,
+
+        ["Bring Mob [Less Lag]"] = true,
+
+        ["Hop Server"] = true,
+
+        ["Reduce Lag"] = true,
+
+        ["Notifycation Remove"] = true,
+
+        ["Hop When Player Nearby"] = {
+
+            ["Enabled"] = true,
+
+            ["Radius"] = 350
+
+        }
+
+    }
+
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrashLua/BloxFruits/main/KaitunBeta.RiseEvo"))();
+  end
+     })    AddButton(Tab1o, {
+     Name = "kaitun simple",
+    Callback = function()
+getgenv().simple_settings = {
+    ["MASTERY"] = {
+        ["ACTIVE"] = true,
+        ["METHOD"] = "Half", -- Method for gaining mastery, "Half"[300] or "Full"[600]
+    },
+    ["OBJECTIVE"] = {
+        ["GODHUMAN"] = true,
+        ["RACE-V3"] = true,race to V3 if possible Human, Mink, (Fishman, Ghoul, Cyborg) soon
+        ["FRAGMENT"] = 100000,
+        -- SWORD
+        ["CANVANDER"] = true,
+        ["BUDDY-SWORD"] = true,
+        ["CURSED-DUAL-KATANA"] = true,
+        ["SHARK-ANCHOR"] = true, -- soon.
+        --GUN
+        ["ACIDUM-RIFLE"] = true,
+        ["VENOM-BOW"] = true,
+        ["SOUL-GUITAR"] = true,
+    },
+    ["FRUITPURCHASE"] = true,
+    ["PRIORITYFRUIT"] = {
+        [1] = "Dragon-Dragon",
+        [2] = "Flame-Flame",
+        [3] = "Rumble-Rumble",
+        [4] = "Human-Human: Buddha",
+        [5] = "Dark-Dark",
+    },
+    ["FPSCAP"] = 30,
+    ["LOWTEXTURE"] = true
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/refs/heads/main/bloxfruit-kaitan-main.lua"))()
+  end
      })
-     
