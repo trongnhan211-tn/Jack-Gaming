@@ -364,11 +364,6 @@ getgenv().Configs = {
 }
 repeat task.wait() pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/kaitun.lua"))() end) until getgenv().Check_Execute
   end
-     })AddButton(Tab1o, {
-     Name = "to scrip",
-    Callback = function()
-Scrip more
-  end
      })  AddButton(Tab1o, {
      Name = "kaitun rise",
     Callback = function()
@@ -452,4 +447,4 @@ _G.Config = {
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TrashLua/BloxFruits/main/KaitunBeta.RiseEvo"))();
   end
-     })
+    })
