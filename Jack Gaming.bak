@@ -131,7 +131,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/Banan
 ------- BUTTON
     
         AddButton(Tab1o, {
-     Name = "rip indra( cần get key hãy lên dis lion hub)",
+     Name = "rip indra( đang lỗi)",
     Callback = function()
 	 getgenv().Mode = "rip_indra" -- rip_indra, Dough King, Pull Lever, TOTS, Darkbeard
 getgenv().Team = "Marines"
@@ -139,7 +139,7 @@ repeat task.wait() until game:IsLoaded() and game:GetService("Players") and game
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/f0952c4a5f3db9e01f4dbd099c1f9b3c.lua"))()
   end
     })  AddButton(Tab1o, {
-     Name = "dough king(cần get key hãy lên dis lion hub)",
+     Name = "dough king(đang lỗi)",
     Callback = function()
 getgenv().Mode = "Dough King" -- rip_indra, Dough King, Pull Lever, TOTS, Darkbeard
 getgenv().Team = "Marines"
@@ -147,7 +147,7 @@ repeat task.wait() until game:IsLoaded() and game:GetService("Players") and game
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/f0952c4a5f3db9e01f4dbd099c1f9b3c.lua"))()
   end
      })  AddButton(Tab1o, {
-     Name = "râu đen(cần get key hãy lên dis lion hub)",
+     Name = "râu đen(đang lỗi)",
     Callback = function()
   end
      })
@@ -362,93 +362,10 @@ getgenv().Configs = {
     ["Lock Fragment"] = 0,
     ["Buy Stuffs"] = true -- buso, geppo, soru, ken haki, ...
 }
-repeat task.wait() pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/kaitun."))() end) until getgenv().Check_Execute
+repeat task.wait() pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/kaitun.lua"))() end) until getgenv().Check_Execute
   end
     })  AddButton(Tab1o, {
-     Name = "kaitun rise hub",
-    Callback = function()
-_G.Config = {
-
-    ["Melee"] = {
-
-        ["Superhuman"] = true,
-
-        ["Death Step"] = true,
-
-        ["Sharkman Karate"] = true,
-
-        ["Electric Claw"] = true,
-
-        ["Dragon Talon"] = true,
-
-        ["Godhuman"] = true
-
-    },
-
-    ["Sword"] = {
-
-        ["Saber"] = true,
-
-        ["Rengoku"] = true,
-
-        ["Canvander"] = true,
-
-        ["Buddy Sword"] = true,
-
-        ["Yama"] = true,
-
-        ["Tushita"] = true,
-
-        ["True Triple Katana"] = true,
-
-        ["Cursed Dual Katana"] = true
-
-    },
-
-    ["Gun"] = {
-
-        ["Kabucha"] = true,
-
-        ["Acidum Rifle"] = true,
-
-        ["Serpent Bow"] = true
-
-    },
-
-    ["Mastery"] = {
-
-        ["Sword"] = true
-
-    },
-
-    ["Setting"] = {
-
-        ["Enabled"] = true,
-
-        ["Bring Mob [Less Lag]"] = true,
-
-        ["Hop Server"] = true,
-
-        ["Reduce Lag"] = true,
-
-        ["Notifycation Remove"] = true,
-
-        ["Hop When Player Nearby"] = {
-
-            ["Enabled"] = true,
-
-            ["Radius"] = 350
-
-        }
-
-    }
-
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TrashLua/BloxFruits/main/KaitunBeta.RiseEvo"))();
-  end
-    })  AddButton(Tab1o, {
-     Name = "kaitun simple",
+     Name = "kaitun simple hub",
     Callback = function()
 -- Simple Kaitun Hub
 getgenv().simple_settings = {
@@ -544,26 +461,92 @@ _G.KaitunConfig = {
 loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
   end
     })  AddButton(Tab1o, {
-     Name = "kaitun mukuro hub(to get key)",
+     Name = "kaitun rise hub",
     Callback = function()
-getgenv().Mode = "OneClick"
-getgenv().Setting = {
-    ["Team"] = "Marines", -- Options "Pirates", "Marines"
-    ["FucusOnLevel"] = true,
-    ["Fruits"] = {  -- setting for fruits u want
-        ["Primary"] = { -- if current fruit is not in this list, eat/buy
-            "Dragon-Dragon",
-            -- u can configs add mores/remove and must end with , (comma symbol)
-        },
-        ["Normal"] = { -- it just a normal fruit list
-            "Dragon-Dragon",
-            -- u can configs add mores/remove and must end with , (comma symbol)
-        }
-        -- run this for get all fruit name `local t={};for _,v in pairs(game.ReplicatedStorage.Remotes.CommF_:InvokeServer("GetFruits"))do table.insert(t,`"{v.Name}"`)end;setclipboard(table.concat(t, "\n"))`
-    },
-    ["IdleCheck"] = 150, -- every (x) seconds if not moving rejoin
-};
+_G.Config = {
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
+    ["Melee"] = {
+
+        ["Superhuman"] = true,
+
+        ["Death Step"] = true,
+
+        ["Sharkman Karate"] = true,
+
+        ["Electric Claw"] = true,
+
+        ["Dragon Talon"] = true,
+
+        ["Godhuman"] = true
+
+    },
+
+    ["Sword"] = {
+
+        ["Saber"] = true,
+
+        ["Rengoku"] = true,
+
+        ["Canvander"] = true,
+
+        ["Buddy Sword"] = true,
+
+        ["Yama"] = true,
+
+        ["Tushita"] = true,
+
+        ["True Triple Katana"] = true,
+
+        ["Cursed Dual Katana"] = true
+
+    },
+
+    ["Gun"] = {
+
+        ["Kabucha"] = true,
+
+        ["Acidum Rifle"] = true,
+
+        ["Serpent Bow"] = true
+
+    },
+
+    ["Mastery"] = {
+
+        ["Sword"] = true
+
+    },
+
+    ["Setting"] = {
+
+        ["Enabled"] = true,
+
+        ["Bring Mob [Less Lag]"] = true,
+
+        ["Hop Server"] = true,
+
+        ["Reduce Lag"] = true,
+
+        ["Notifycation Remove"] = true,
+
+        ["Hop When Player Nearby"] = {
+
+            ["Enabled"] = true,
+
+            ["Radius"] = 350
+
+        }
+
+    }
+
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrashLua/BloxFruits/main/KaitunBeta.RiseEvo"))();
+  end
+    })  AddButton(Tab1o, {
+     Name = "kaitun mukuro(to get key)",
+    Callback = function()
+Scrip more
   end
     })
+
