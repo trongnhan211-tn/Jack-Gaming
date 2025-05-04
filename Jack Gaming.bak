@@ -160,7 +160,167 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/f0952c4a5f3db9
 ------- BUTTON
     
         AddButton(Tab1o, {
-     Name = "kaitun xero(to get ket)",
+     Name = "auto bouty cdk-dra(by lion)",
+    Callback = function()
+     repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Team = "Pirates"
+getgenv().Config = {
+    ["Safe Health"] = {50},
+    ["Custom Y Run"] = {
+        Enabled = true,
+        ["Y Run"] = 5000
+    },
+    ["Hunt Method"] = {
+        ["Use Move Predict"] = false,
+        ["Hit and Run"] = false,
+        ["Aimbot"] = true,
+        ["ESP Player"] = true,
+        ["Max Attack Time"] = 60
+    },
+    ["Shop"] = {
+        ["Random Fruit"] = false,
+        ["Store Fruit"] = true,
+        ["Zoro Sword"] = false
+    },
+    ["Setting"] = {
+        ["World"] = 3,
+        ["White Screen"] = false,
+        ["Url"] = "Your_Webhook_Url"
+    },
+    ["Skip"] = {
+        ["Avoid V4"] = false
+    },
+    ["Spam All Skill On V4"] = {
+        Enabled = true,
+        ["Weapons"] = {"Melee", "Sword", "Gun", "Blox Fruit"}
+    }, 
+    Items = {
+        Use = {"Melee", "Sword"},
+        Melee = {
+            Enable = true,
+            Delay = 0.6,
+            Skills = {
+                Z = {Enable = true, HoldTime = 0.3},
+                X = {Enable = true, HoldTime = 0.2},
+                C = {Enable = true, HoldTime = 0.5}
+            }
+        },
+        Sword = {
+            Enable = true,
+            Delay = 0.5,
+            Skills = {
+                Z = {Enable = true, HoldTime = 1},
+                X = {Enable = true, HoldTime = 0}
+            }
+        },
+        Gun = {
+            Enable = true,
+            Delay = 0.05,
+            Skills = {
+                Z = {Enable = true, HoldTime = 0.05},
+                X = {Enable = true, HoldTime = 0.05}
+            }
+        },
+        ["Blox Fruit"] = {
+            Enable = false,
+            Delay = 0.05,
+            Skills = {
+                Z = {Enable = true, HoldTime = 0.05},
+                X = {Enable = true, HoldTime = 0.05},
+                C = {Enable = false, HoldTime = 0.05},
+                V = {Enable = false, HoldTime = 0.05},
+                F = {Enable = false, HoldTime = 0.05}
+            }
+        }
+    }
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/10f7f97cebba24a87808c36ebd345a97.lua"))()
+  end
+    })  AddButton(Tab1o, {
+     Name = "god-cdk(by matsune)",
+    Callback = function()
+getgenv().Config = {
+ ["Team"] = "Pirates",
+ ["Safe Health"] = {40, 50},
+ ["Skip"] = { 
+ ["Fruit"] = {["Enabled"] = true,
+ ["Avoid Fruit"] = {
+ "Portal-Portal", 
+ "Kitsune-Kitsune"
+ }
+ },
+ ["Avoid V4"] = true
+ },
+ ["Hunt Method"] = {
+ ["Use Move Predict"] = true,
+ ["Hit and Run"] = true
+ },
+ ["Spam All Skill On V4"] = {
+ ["Enabled"] = true,
+ ["Weapons"] = {"Melee", "Gun", "Sword", "Blox Fruit"}
+ },
+ ["Chat"] = {
+ ["Enabled"] = false,
+ ["Message"] = {""}
+ },
+ ["Custom Y Run"] = {
+ ["Enabled"] = false,
+ ["Y Run"] = 100
+ },
+ ["Misc"] = {
+ ["Auto Store Fruit"] = true,
+ ["Auto Random Fruit"] = true,
+ ["White Screen"] = false,
+ ["Click Delay"] = 0.1,
+ },
+ ["Items"] = {["Use"] = {"Melee", "Gun", "Sword", "Blox Fruit"},
+ ["Melee"] = {
+ ["Enable"] = true,
+ ["Skills"] = {
+ ["Z"] = {["Enable"] = true, ["HoldTime"] = 1.5},
+ ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+ ["C"] = {["Enable"] = true, ["HoldTime"] = 0.1}
+ }
+ },
+ ["Blox Fruit"] = {
+ ["Enable"] = false,
+ ["Skills"] = {
+ ["Z"] = {["Enable"] = true, ["HoldTime"] = 1.2},
+ ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
+ ["C"] = {["Enable"] = true, ["HoldTime"] = 0},
+ ["V"] = {["Enable"] = false, ["HoldTime"] = 0},
+ ["F"] = {["Enable"] = false, ["HoldTime"] = 0}
+ }
+ },
+ ["Sword"] = {
+ ["Enable"] = true,
+ ["Skills"] = {
+ ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+ ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1}
+ } 
+ },
+ ["Gun"] = {
+ ["Enable"] = true, 
+ ["Skills"] = {
+ ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+ ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1}
+ } 
+ }
+ }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RealMatsune/Rolls-Rocye/refs/heads/main/b164o774u241n032t141y.lua"))()
+  end
+     })
+
+      
+------ Tab
+     local Tab1o = MakeTab({Name = "Script kaitun"})
+     
+    
+------- BUTTON
+    
+        AddButton(Tab1o, {
+     Name = "kaitun xero(to get key)",
     Callback = function()
 -- Max level, godhuman, cdk, sgt
 getgenv().Shutdown = true -- Turn on if u are farming bulk accounts
@@ -203,123 +363,5 @@ getgenv().Configs = {
     ["Buy Stuffs"] = true -- buso, geppo, soru, ken haki, ...
 }
 repeat task.wait() pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/kaitun.lua"))() end) until getgenv().Check_Execute
-  end
-     })    AddButton(Tab1o, {
-     Name = "kaitun rise",
-    Callback = function()
-_G.Config = {
-
-    ["Melee"] = {
-
-        ["Superhuman"] = true,
-
-        ["Death Step"] = true,
-
-        ["Sharkman Karate"] = true,
-
-        ["Electric Claw"] = true,
-
-        ["Dragon Talon"] = true,
-
-        ["Godhuman"] = true
-
-    },
-
-    ["Sword"] = {
-
-        ["Saber"] = true,
-
-        ["Rengoku"] = true,
-
-        ["Canvander"] = true,
-
-        ["Buddy Sword"] = true,
-
-        ["Yama"] = true,
-
-        ["Tushita"] = true,
-
-        ["True Triple Katana"] = true,
-
-        ["Cursed Dual Katana"] = true
-
-    },
-
-    ["Gun"] = {
-
-        ["Kabucha"] = true,
-
-        ["Acidum Rifle"] = true,
-
-        ["Serpent Bow"] = true
-
-    },
-
-    ["Mastery"] = {
-
-        ["Sword"] = true
-
-    },
-
-    ["Setting"] = {
-
-        ["Enabled"] = true,
-
-        ["Bring Mob [Less Lag]"] = true,
-
-        ["Hop Server"] = true,
-
-        ["Reduce Lag"] = true,
-
-        ["Notifycation Remove"] = true,
-
-        ["Hop When Player Nearby"] = {
-
-            ["Enabled"] = true,
-
-            ["Radius"] = 350
-
-        }
-
-    }
-
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TrashLua/BloxFruits/main/KaitunBeta.RiseEvo"))();
-  end
-     })    AddButton(Tab1o, {
-     Name = "kaitun simple",
-    Callback = function()
-getgenv().simple_settings = {
-    ["MASTERY"] = {
-        ["ACTIVE"] = true,
-        ["METHOD"] = "Half", -- Method for gaining mastery, "Half"[300] or "Full"[600]
-    },
-    ["OBJECTIVE"] = {
-        ["GODHUMAN"] = true,
-        ["RACE-V3"] = true,race to V3 if possible Human, Mink, (Fishman, Ghoul, Cyborg) soon
-        ["FRAGMENT"] = 100000,
-        -- SWORD
-        ["CANVANDER"] = true,
-        ["BUDDY-SWORD"] = true,
-        ["CURSED-DUAL-KATANA"] = true,
-        ["SHARK-ANCHOR"] = true, -- soon.
-        --GUN
-        ["ACIDUM-RIFLE"] = true,
-        ["VENOM-BOW"] = true,
-        ["SOUL-GUITAR"] = true,
-    },
-    ["FRUITPURCHASE"] = true,
-    ["PRIORITYFRUIT"] = {
-        [1] = "Dragon-Dragon",
-        [2] = "Flame-Flame",
-        [3] = "Rumble-Rumble",
-        [4] = "Human-Human: Buddha",
-        [5] = "Dark-Dark",
-    },
-    ["FPSCAP"] = 30,
-    ["LOWTEXTURE"] = true
-}
-loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/refs/heads/main/bloxfruit-kaitan-main.lua"))()
   end
      })
